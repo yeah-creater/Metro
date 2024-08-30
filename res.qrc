@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>imgs/logo.png</file>
+        <file>city/shanghai.txt</file>
+        <file>imgs/historylogo.jfif</file>
+        <file>imgs/user.jfif</file>
+    </qresource>
+</RCC>
