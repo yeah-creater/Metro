@@ -1,13 +1,16 @@
 #include "utils.h"
 
+#include <QDir>
+
 Utils::Utils()
 {
 
 }
-const QString Utils::URL = "D:/Data/GoogleShare/QT/Project/metro/city/shanghai.txt";
+const QString Utils::URL = "shanghai.txt";
 
 Network Utils::buildMetroNetwork() {
-    QFile file(URL);
+    QFile file(QDir::currentPath() + "/" + URL);
+    qDebug() << QDir::currentPath();
     Network network;
     if (!file.open(QIODevice::ReadOnly| QIODevice::Text)) {
         QMessageBox::warning(nullptr, "Metro大都会", "找不到地铁文件信息",

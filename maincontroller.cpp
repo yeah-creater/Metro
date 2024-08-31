@@ -12,7 +12,7 @@ MainController::MainController(MainWidget *mainWidget, QObject *parent) :
 {
     connect(this->mainWidget, SIGNAL(login(QString, QString)), this, SLOT(login(QString, QString)));
     this->db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("D:/Data/GoogleShare/QT/Project/metro/metro.db");
+    db.setDatabaseName("metro.db");
 }
 
 int MainController::login(QString username, QString password)
