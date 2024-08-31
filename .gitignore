@@ -33,8 +33,6 @@
 *.a
 *.lib
 
-# Executables for windows
-*.exe
 
 # usr configurations
 *.usr
